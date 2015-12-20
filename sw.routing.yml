@@ -1,0 +1,16 @@
+
+sw.default_controller_index:
+  path: '/sw'
+  defaults:
+    _controller: '\Drupal\sw\Controller\DefaultController::index'
+    _title: 'test'
+  requirements:
+    _permission: 'access content'
+
+sw_default_form:
+  path: '/sw/starships'
+  defaults:
+    _form: '\Drupal\sw\Form\DefaultForm'
+    _title: 'Starship'
+  requirements:
+    _permission: 'access content'
